@@ -2,9 +2,20 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "outDir": "dist",
-    "baseUrl": ".",
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "rootDir": ".",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "*"
+      ],
+      "utils/*": [ "./src/utils/*" ],
+      "interface/*": [ "./src/interface/*" ],
+      "model/*": [ "./src/model/*" ],
+      "validators/*": [ "./src/validators/*" ]
+    }
   },
-  "sourceMap": true,
+  "sourceMap": true
 }
