@@ -3,3 +3,9 @@ export enum ENV {
 	production = 'production',
 	development = 'development'
 }
+
+
+export enum ROLE {
+	editor = 'editor',
+	guest = 'guest'
+}

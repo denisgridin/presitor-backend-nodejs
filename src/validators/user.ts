@@ -7,5 +7,5 @@ export class UserValidation {
 	@MinLength(6)
 	password: string
 	
-	user_id?: string
+	userId?: string
 }

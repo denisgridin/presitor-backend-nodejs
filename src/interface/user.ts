@@ -2,7 +2,7 @@ import { Document } from "mongoose"
 import {IsEmail, MinLength} from "class-validator";
 
 export interface IUser {
-	user_id?: string,
+	userId?: string,
 	email: string,
 	password: string
 }

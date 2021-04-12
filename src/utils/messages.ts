@@ -7,6 +7,22 @@ export const MESSAGES = {
 	ERROR_USER_NOT_FOUND: 'User is not found',
 	ERROR_UNAUTHORIZED: 'Unauthorized',
 	ERROR_TOKEN_REFRESH: 'Unable to refresh token',
-	ERROR_UNDEFINED_TOKEN: 'Undefined token'
+	ERROR_UNDEFINED_TOKEN: 'Undefined token',
+	ERROR_REMOVE_TOKEN: 'Unable to remove token',
+	SUCCESS_TOKEN_REMOVED: 'Token successfully removed',
 	
+	
+	ERROR_PRESENTATION_CREATE: 'Unable create presentation',
+	ERROR_GET_USER_PRESENTATIONS: 'Unable to get user presentations',
+	ERROR_GET_SLIDES: 'Unable to get presentation slides',
+	ERROR_CREATE_SLIDE: 'Unable to create slide for presentation',
+	ERROR_PRESENTATION_NOT_FOUND: 'Presentation not found',
+	ERROR_PRESENTATION_ACCESS: 'You have no access to update this presentation. Contact with presentation editor',
+	ERROR_GET_SLIDE: 'Unable to get slide',
+	ERROR_DELETE_SLIDE: 'Unable to remove slide',
+	
+	
+	ERROR_QUERY_NOT_SET(field: string) {
+		return `Query parameter is not set: ${field}`;
+	}
 }
