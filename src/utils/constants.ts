@@ -10,14 +10,20 @@ export const PATH = {
 		last: '/presentations/last'
 	},
 	slides: {
-		default: '/slides'
+		default: '/presentation/:presentationId/slides'
+	},
+	elements: {
+		default: '/presentation/:presentationId/slides/:slideId/elements',
+		exact: '/presentation/:presentationId/slides/:slideId/elements/:elementId'
 	}
 }
 
 export const FIELDS = {
 	PRESENTATION_ID: 'presentationId',
 	SLIDE_ID: 'slideId',
-	SLIDE: 'slide'
+	SLIDE: 'slide',
+	ELEMENT_TYPE: 'elementType',
+	ELEMENT_ID: 'elementId'
 }
 
 export const TOKEN_EXPIRATION = '60m'

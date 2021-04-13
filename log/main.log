@@ -18767,3 +18767,1063 @@
 [2021-04-12T18:22:33.309] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [ERROR] [line 72]: null
 [2021-04-12T18:23:12.554] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
 [2021-04-12T18:23:13.985] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-12T18:26:31.868] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-12T18:26:33.168] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-12T18:27:55.219] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-12T18:27:56.564] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-12T18:30:45.230] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-12T18:30:46.539] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-12T18:31:01.620] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-12T18:31:02.825] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-12T18:33:57.071] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-12T18:33:58.691] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T10:31:28.514] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T10:31:30.809] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:09:02.355] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:09:04.276] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:09:30.316] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:09:31.470] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:11:47.601] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:11:49.052] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:13:28.501] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:13:30.042] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:14:34.737] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 29]: Check user access to presentation
+[2021-04-13T16:14:34.739] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 33]: presentationId: undefined
+[2021-04-13T16:14:34.743] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgyMzU4ODIsImV4cCI6MTYxODIzOTQ4Mn0.QdzWENV3kDQNtNWja_vlM88Bp_v7Y6j8ZY8dHHcqtQw
+[2021-04-13T16:14:34.749] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [ERROR] [line 54]: TokenExpiredError: jwt expired
+    at D:\Diploma\presitor-backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (D:\Diploma\presitor-backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (D:\Diploma\presitor-backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at Object.getUserFromToken (D:\Diploma\presitor-backend\src\utils\helpers.ts:52:6)
+    at D:\Diploma\presitor-backend\src\middleware\middleware.ts:35:17
+    at step (D:\Diploma\presitor-backend\src\middleware\middleware.ts:33:23)
+    at Object.next (D:\Diploma\presitor-backend\src\middleware\middleware.ts:14:53)
+    at D:\Diploma\presitor-backend\src\middleware\middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\Diploma\presitor-backend\src\middleware\middleware.ts:4:12)
+    at checkUserPresentationAccess (D:\Diploma\presitor-backend\src\middleware\middleware.ts:65:12)
+    at Layer.handle [as handle_request] (D:\Diploma\presitor-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Diploma\presitor-backend\node_modules\express\lib\router\route.js:137:13)
+    at routeGuard (D:\Diploma\presitor-backend\node_modules\src\driver\express\ExpressDriver.ts:179:16)
+    at Layer.handle [as handle_request] (D:\Diploma\presitor-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Diploma\presitor-backend\node_modules\express\lib\router\route.js:137:13) {
+  name: 'TokenExpiredError',
+  message: 'jwt expired',
+  expiredAt: 2021-04-12T14:58:02.000Z
+}
+[2021-04-13T16:14:34.826] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [ERROR] [line 40]: Error {
+  message: 'You have no access to update this presentation. Contact with presentation editor',
+  code: 302,
+  error: null
+}
+[2021-04-13T16:14:34.834] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 68]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgyMzU4ODIsImV4cCI6MTYxODIzOTQ4Mn0.QdzWENV3kDQNtNWja_vlM88Bp_v7Y6j8ZY8dHHcqtQw
+[2021-04-13T16:14:34.839] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 70]: data: undefined
+[2021-04-13T16:14:34.841] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 71]: token valid: false
+[2021-04-13T16:14:34.842] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [ERROR] [line 72]: TokenExpiredError: jwt expired
+    at D:\Diploma\presitor-backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (D:\Diploma\presitor-backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (D:\Diploma\presitor-backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at ExpressDriver.authChecker [as authorizationChecker] (D:\Diploma\presitor-backend\src\utils\helpers.ts:69:7)
+    at D:\Diploma\presitor-backend\node_modules\src\driver\express\ExpressDriver.ts:116:36
+    at Layer.handle [as handle_request] (D:\Diploma\presitor-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Diploma\presitor-backend\node_modules\express\lib\router\route.js:137:13)
+    at jsonParser (D:\Diploma\presitor-backend\node_modules\body-parser\lib\types\json.js:119:7)
+    at Layer.handle [as handle_request] (D:\Diploma\presitor-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Diploma\presitor-backend\node_modules\express\lib\router\route.js:137:13)
+    at D:\Diploma\presitor-backend\src\middleware\middleware.ts:42:5
+    at step (D:\Diploma\presitor-backend\src\middleware\middleware.ts:33:23)
+    at Object.next (D:\Diploma\presitor-backend\src\middleware\middleware.ts:14:53)
+    at fulfilled (D:\Diploma\presitor-backend\src\middleware\middleware.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5) {
+  name: 'TokenExpiredError',
+  message: 'jwt expired',
+  expiredAt: 2021-04-12T14:58:02.000Z
+}
+[2021-04-13T16:14:54.370] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 31]: slides [
+  {
+    _id: 607455136ba0e81ae007d782,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '1aa1caa3-52ae-4771-b529-c79527d08571',
+    index: 0,
+    __v: 0
+  },
+  {
+    _id: 607455419e4ad23dd4132394,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '1b5871d1-2ab7-4e11-9919-0b13cce2b5e9',
+    index: 1,
+    __v: 0
+  },
+  {
+    _id: 60745bb49732002244374ad9,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: 'ebcab03c-a8e9-4709-b30f-6bc977525b5b',
+    index: 2,
+    __v: 0
+  },
+  {
+    _id: 60745be8971cdf33108d7418,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '247e0f4a-7a35-4b2e-9c59-50dfdac8b87b',
+    index: 3,
+    __v: 0
+  },
+  {
+    _id: 60745cbcc94fce3cf003bad9,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: 'd6a8e055-c906-4f39-86a3-6971458cc410',
+    index: 4,
+    __v: 0
+  },
+  {
+    _id: 60745d73aca7b03f34bd0b6d,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '4e22362e-fc54-4d2f-abdf-5a855d0fe64b',
+    index: 5,
+    __v: 0
+  },
+  {
+    _id: 60745d7eaca7b03f34bd0b6e,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '436e85e0-4d9c-4612-9eb2-962b7c983759',
+    index: 6,
+    __v: 0
+  }
+]
+[2021-04-13T16:15:57.043] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:15:58.243] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:16:00.556] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 31]: slides [
+  {
+    _id: 607455136ba0e81ae007d782,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '1aa1caa3-52ae-4771-b529-c79527d08571',
+    index: 0,
+    __v: 0
+  },
+  {
+    _id: 607455419e4ad23dd4132394,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '1b5871d1-2ab7-4e11-9919-0b13cce2b5e9',
+    index: 1,
+    __v: 0
+  },
+  {
+    _id: 60745bb49732002244374ad9,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: 'ebcab03c-a8e9-4709-b30f-6bc977525b5b',
+    index: 2,
+    __v: 0
+  },
+  {
+    _id: 60745be8971cdf33108d7418,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '247e0f4a-7a35-4b2e-9c59-50dfdac8b87b',
+    index: 3,
+    __v: 0
+  },
+  {
+    _id: 60745cbcc94fce3cf003bad9,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: 'd6a8e055-c906-4f39-86a3-6971458cc410',
+    index: 4,
+    __v: 0
+  },
+  {
+    _id: 60745d73aca7b03f34bd0b6d,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '4e22362e-fc54-4d2f-abdf-5a855d0fe64b',
+    index: 5,
+    __v: 0
+  },
+  {
+    _id: 60745d7eaca7b03f34bd0b6e,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '436e85e0-4d9c-4612-9eb2-962b7c983759',
+    index: 6,
+    __v: 0
+  }
+]
+[2021-04-13T16:16:00.638] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:16:00.698] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:16:00.756] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:16:00.815] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:16:00.873] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:16:00.931] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:16:00.953] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:16:18.532] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:16:19.580] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:16:24.876] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 31]: slides [
+  {
+    _id: 607455136ba0e81ae007d782,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '1aa1caa3-52ae-4771-b529-c79527d08571',
+    index: 0,
+    __v: 0
+  },
+  {
+    _id: 607455419e4ad23dd4132394,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '1b5871d1-2ab7-4e11-9919-0b13cce2b5e9',
+    index: 1,
+    __v: 0
+  },
+  {
+    _id: 60745bb49732002244374ad9,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: 'ebcab03c-a8e9-4709-b30f-6bc977525b5b',
+    index: 2,
+    __v: 0
+  },
+  {
+    _id: 60745be8971cdf33108d7418,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '247e0f4a-7a35-4b2e-9c59-50dfdac8b87b',
+    index: 3,
+    __v: 0
+  },
+  {
+    _id: 60745cbcc94fce3cf003bad9,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: 'd6a8e055-c906-4f39-86a3-6971458cc410',
+    index: 4,
+    __v: 0
+  },
+  {
+    _id: 60745d73aca7b03f34bd0b6d,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '4e22362e-fc54-4d2f-abdf-5a855d0fe64b',
+    index: 5,
+    __v: 0
+  },
+  {
+    _id: 60745d7eaca7b03f34bd0b6e,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '436e85e0-4d9c-4612-9eb2-962b7c983759',
+    index: 6,
+    __v: 0
+  }
+]
+[2021-04-13T16:16:24.959] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:16:25.018] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:16:25.078] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:16:25.138] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:16:25.197] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:16:25.257] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:16:25.266] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:17:28.328] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:17:29.552] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:17:35.656] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 31]: slides [
+  {
+    _id: 607455136ba0e81ae007d782,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '1aa1caa3-52ae-4771-b529-c79527d08571',
+    index: 0,
+    __v: 0
+  },
+  {
+    _id: 607455419e4ad23dd4132394,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '1b5871d1-2ab7-4e11-9919-0b13cce2b5e9',
+    index: 1,
+    __v: 0
+  },
+  {
+    _id: 60745bb49732002244374ad9,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: 'ebcab03c-a8e9-4709-b30f-6bc977525b5b',
+    index: 2,
+    __v: 0
+  },
+  {
+    _id: 60745be8971cdf33108d7418,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '247e0f4a-7a35-4b2e-9c59-50dfdac8b87b',
+    index: 3,
+    __v: 0
+  },
+  {
+    _id: 60745cbcc94fce3cf003bad9,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: 'd6a8e055-c906-4f39-86a3-6971458cc410',
+    index: 4,
+    __v: 0
+  },
+  {
+    _id: 60745d73aca7b03f34bd0b6d,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '4e22362e-fc54-4d2f-abdf-5a855d0fe64b',
+    index: 5,
+    __v: 0
+  },
+  {
+    _id: 60745d7eaca7b03f34bd0b6e,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '436e85e0-4d9c-4612-9eb2-962b7c983759',
+    index: 6,
+    __v: 0
+  }
+]
+[2021-04-13T16:17:35.665] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 43]: [
+  Promise { <pending> },
+  Promise { <pending> },
+  Promise { <pending> },
+  Promise { <pending> },
+  Promise { <pending> },
+  Promise { <pending> },
+  Promise { <pending> }
+]
+[2021-04-13T16:17:35.749] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:17:35.809] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:17:35.871] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:17:35.930] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:17:35.990] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:17:36.049] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:17:36.062] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 34]: contents []
+[2021-04-13T16:18:24.389] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:18:25.310] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:18:29.939] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 31]: slides [
+  {
+    _id: 607455136ba0e81ae007d782,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '1aa1caa3-52ae-4771-b529-c79527d08571',
+    index: 0,
+    __v: 0
+  },
+  {
+    _id: 607455419e4ad23dd4132394,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '1b5871d1-2ab7-4e11-9919-0b13cce2b5e9',
+    index: 1,
+    __v: 0
+  },
+  {
+    _id: 60745bb49732002244374ad9,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: 'ebcab03c-a8e9-4709-b30f-6bc977525b5b',
+    index: 2,
+    __v: 0
+  },
+  {
+    _id: 60745be8971cdf33108d7418,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '247e0f4a-7a35-4b2e-9c59-50dfdac8b87b',
+    index: 3,
+    __v: 0
+  },
+  {
+    _id: 60745cbcc94fce3cf003bad9,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: 'd6a8e055-c906-4f39-86a3-6971458cc410',
+    index: 4,
+    __v: 0
+  },
+  {
+    _id: 60745d73aca7b03f34bd0b6d,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '4e22362e-fc54-4d2f-abdf-5a855d0fe64b',
+    index: 5,
+    __v: 0
+  },
+  {
+    _id: 60745d7eaca7b03f34bd0b6e,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '436e85e0-4d9c-4612-9eb2-962b7c983759',
+    index: 6,
+    __v: 0
+  }
+]
+[2021-04-13T16:18:29.947] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 40]: [
+  Promise {
+    {
+      name: 'Slide name',
+      slideId: '1aa1caa3-52ae-4771-b529-c79527d08571',
+      presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+      index: 0
+    }
+  },
+  Promise {
+    {
+      name: 'Slide name',
+      slideId: '1b5871d1-2ab7-4e11-9919-0b13cce2b5e9',
+      presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+      index: 1
+    }
+  },
+  Promise {
+    {
+      name: 'Slide name',
+      slideId: 'ebcab03c-a8e9-4709-b30f-6bc977525b5b',
+      presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+      index: 2
+    }
+  },
+  Promise {
+    {
+      name: 'Slide name',
+      slideId: '247e0f4a-7a35-4b2e-9c59-50dfdac8b87b',
+      presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+      index: 3
+    }
+  },
+  Promise {
+    {
+      name: 'Slide name',
+      slideId: 'd6a8e055-c906-4f39-86a3-6971458cc410',
+      presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+      index: 4
+    }
+  },
+  Promise {
+    {
+      name: 'Slide name',
+      slideId: '4e22362e-fc54-4d2f-abdf-5a855d0fe64b',
+      presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+      index: 5
+    }
+  },
+  Promise {
+    {
+      name: 'Slide name',
+      slideId: '436e85e0-4d9c-4612-9eb2-962b7c983759',
+      presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+      index: 6
+    }
+  }
+]
+[2021-04-13T16:18:52.848] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:18:53.852] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:18:59.133] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 31]: slides [
+  {
+    _id: 607455136ba0e81ae007d782,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '1aa1caa3-52ae-4771-b529-c79527d08571',
+    index: 0,
+    __v: 0
+  },
+  {
+    _id: 607455419e4ad23dd4132394,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '1b5871d1-2ab7-4e11-9919-0b13cce2b5e9',
+    index: 1,
+    __v: 0
+  },
+  {
+    _id: 60745bb49732002244374ad9,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: 'ebcab03c-a8e9-4709-b30f-6bc977525b5b',
+    index: 2,
+    __v: 0
+  },
+  {
+    _id: 60745be8971cdf33108d7418,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '247e0f4a-7a35-4b2e-9c59-50dfdac8b87b',
+    index: 3,
+    __v: 0
+  },
+  {
+    _id: 60745cbcc94fce3cf003bad9,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: 'd6a8e055-c906-4f39-86a3-6971458cc410',
+    index: 4,
+    __v: 0
+  },
+  {
+    _id: 60745d73aca7b03f34bd0b6d,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '4e22362e-fc54-4d2f-abdf-5a855d0fe64b',
+    index: 5,
+    __v: 0
+  },
+  {
+    _id: 60745d7eaca7b03f34bd0b6e,
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    name: 'Slide name',
+    slideId: '436e85e0-4d9c-4612-9eb2-962b7c983759',
+    index: 6,
+    __v: 0
+  }
+]
+[2021-04-13T16:18:59.140] [D:\Diploma\presitor-backend\src\controller\slide-controller.ts] [DEBUG] [line 40]: [
+  {
+    name: 'Slide name',
+    slideId: '1aa1caa3-52ae-4771-b529-c79527d08571',
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    index: 0
+  },
+  {
+    name: 'Slide name',
+    slideId: '1b5871d1-2ab7-4e11-9919-0b13cce2b5e9',
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    index: 1
+  },
+  {
+    name: 'Slide name',
+    slideId: 'ebcab03c-a8e9-4709-b30f-6bc977525b5b',
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    index: 2
+  },
+  {
+    name: 'Slide name',
+    slideId: '247e0f4a-7a35-4b2e-9c59-50dfdac8b87b',
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    index: 3
+  },
+  {
+    name: 'Slide name',
+    slideId: 'd6a8e055-c906-4f39-86a3-6971458cc410',
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    index: 4
+  },
+  {
+    name: 'Slide name',
+    slideId: '4e22362e-fc54-4d2f-abdf-5a855d0fe64b',
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    index: 5
+  },
+  {
+    name: 'Slide name',
+    slideId: '436e85e0-4d9c-4612-9eb2-962b7c983759',
+    presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+    index: 6
+  }
+]
+[2021-04-13T16:19:46.766] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:19:48.214] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:21:26.145] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:21:27.610] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:23:08.790] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:23:09.866] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:23:48.822] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:23:49.819] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:28:16.654] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:28:17.823] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:28:52.571] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:28:53.703] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:29:33.523] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:29:34.761] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:30:38.891] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:30:40.350] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:31:06.913] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:31:07.836] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:31:12.766] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 61]: Presentation found
+[2021-04-13T16:31:13.046] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 17]: get slide elements
+[2021-04-13T16:31:32.791] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:31:33.775] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:31:39.076] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 61]: Presentation found
+[2021-04-13T16:31:39.259] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 17]: get slide elements
+[2021-04-13T16:33:53.022] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:33:54.243] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:37:56.073] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:37:57.227] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:38:07.345] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:38:08.431] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:43:55.894] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:43:57.347] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:44:02.392] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 61]: Presentation found
+[2021-04-13T16:44:02.634] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 33]: create element: [object Object]
+[2021-04-13T16:44:02.753] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 38]: {
+  _id: 6075a022267be9210c774493,
+  insertion: { tag: 'h1', contentType: 'title' },
+  layout: { x: 150, y: 300, width: 300, height: 100, rotation: 0 },
+  font: {
+    fontFamily: 'Montserrat',
+    fontSize: 23,
+    letterSpacing: 3,
+    lineHeight: 30,
+    fontCase: 'normal',
+    color: '#ffffff',
+    bold: false,
+    italic: false,
+    align: 'left'
+  },
+  text: 'Заголовок',
+  __v: 0
+}
+[2021-04-13T16:44:29.090] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:44:30.147] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:44:56.826] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 61]: Presentation found
+[2021-04-13T16:44:57.015] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 33]: create element: [object Object]
+[2021-04-13T16:44:57.115] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 38]: {
+  _id: 6075a0599237652434b0302f,
+  insertion: { tag: 'p', contentType: 'paragraph' },
+  layout: { x: 250, y: 420, width: 300, height: 100, rotation: 0 },
+  font: {
+    fontFamily: 'Montserrat',
+    fontSize: 23,
+    letterSpacing: 3,
+    lineHeight: 30,
+    fontCase: 'normal',
+    color: '#ffffff',
+    bold: false,
+    italic: false,
+    align: 'left'
+  },
+  text: 'Text',
+  __v: 0
+}
+[2021-04-13T16:45:37.842] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 61]: Presentation found
+[2021-04-13T16:45:37.970] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 33]: create element: [object Object]
+[2021-04-13T16:45:38.061] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 38]: {
+  _id: 6075a0819237652434b03030,
+  insertion: { tag: 'li', contentType: 'list', listStyle: 'circle' },
+  layout: { x: 450, y: 120, width: 300, height: 100, rotation: 0 },
+  font: {
+    fontFamily: 'Montserrat',
+    fontSize: 23,
+    letterSpacing: 3,
+    lineHeight: 30,
+    fontCase: 'normal',
+    color: '#ffffff',
+    bold: false,
+    italic: false,
+    align: 'left'
+  },
+  text: 'Первый элемент',
+  __v: 0
+}
+[2021-04-13T16:50:35.036] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 61]: Presentation found
+[2021-04-13T16:50:35.166] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 20]: get slide elements
+[2021-04-13T16:53:18.848] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:53:20.437] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:53:25.915] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 61]: Presentation found
+[2021-04-13T16:53:26.076] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 20]: get slide elements
+[2021-04-13T16:53:30.386] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 61]: Presentation found
+[2021-04-13T16:53:30.534] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 33]: create element: [object Object]
+[2021-04-13T16:53:30.659] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 38]: {
+  _id: 6075a25af3d4e22ce46600a4,
+  __t: 'content',
+  presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+  slideId: '1aa1caa3-52ae-4771-b529-c79527d08571',
+  elementType: 'content',
+  name: 'Text',
+  insertion: { tag: 'li', contentType: 'list', listStyle: 'circle' },
+  layout: { x: 450, y: 120, width: 300, height: 100, rotation: 0 },
+  font: {
+    fontFamily: 'Montserrat',
+    fontSize: 23,
+    letterSpacing: 3,
+    lineHeight: 30,
+    fontCase: 'normal',
+    color: '#ffffff',
+    bold: false,
+    italic: false,
+    align: 'left'
+  },
+  text: 'Первый элемент',
+  elementId: '2835ff2c-45bd-41fa-a92e-e144da6c31e2',
+  __v: 0
+}
+[2021-04-13T16:53:56.785] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 61]: Presentation found
+[2021-04-13T16:53:56.911] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 20]: get slide elements
+[2021-04-13T16:58:22.735] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:58:24.059] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T16:59:31.002] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T16:59:32.364] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T17:01:23.055] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T17:01:24.411] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T17:01:50.514] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T17:01:52.408] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T17:02:54.570] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T17:02:56.095] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T17:04:04.170] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T17:04:05.457] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T17:04:09.956] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 29]: Check user access to presentation
+[2021-04-13T17:04:09.959] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 33]: presentationId: undefined
+[2021-04-13T17:04:09.960] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgyMzU4ODIsImV4cCI6MTYxODIzOTQ4Mn0.QdzWENV3kDQNtNWja_vlM88Bp_v7Y6j8ZY8dHHcqtQw
+[2021-04-13T17:04:09.965] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [ERROR] [line 54]: TokenExpiredError: jwt expired
+    at D:\Diploma\presitor-backend\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (D:\Diploma\presitor-backend\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (D:\Diploma\presitor-backend\node_modules\jsonwebtoken\verify.js:94:10)
+    at Object.getUserFromToken (D:\Diploma\presitor-backend\src\utils\helpers.ts:52:6)
+    at D:\Diploma\presitor-backend\src\middleware\middleware.ts:35:17
+    at step (D:\Diploma\presitor-backend\src\middleware\middleware.ts:33:23)
+    at Object.next (D:\Diploma\presitor-backend\src\middleware\middleware.ts:14:53)
+    at D:\Diploma\presitor-backend\src\middleware\middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\Diploma\presitor-backend\src\middleware\middleware.ts:4:12)
+    at checkUserPresentationAccess (D:\Diploma\presitor-backend\src\middleware\middleware.ts:65:12)
+    at Layer.handle [as handle_request] (D:\Diploma\presitor-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Diploma\presitor-backend\node_modules\express\lib\router\route.js:137:13)
+    at routeGuard (D:\Diploma\presitor-backend\node_modules\src\driver\express\ExpressDriver.ts:179:16)
+    at Layer.handle [as handle_request] (D:\Diploma\presitor-backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Diploma\presitor-backend\node_modules\express\lib\router\route.js:137:13) {
+  name: 'TokenExpiredError',
+  message: 'jwt expired',
+  expiredAt: 2021-04-12T14:58:02.000Z
+}
+[2021-04-13T17:04:10.049] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [ERROR] [line 40]: Error {
+  message: 'You have no access to update this presentation. Contact with presentation editor',
+  code: 302,
+  error: null
+}
+[2021-04-13T17:04:10.057] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 61]: Presentation found
+[2021-04-13T17:04:19.546] [D:\Diploma\presitor-backend\src\controller\user-controller.ts] [DEBUG] [line 47]: {
+  _id: 60699516dc63a63d248acb25,
+  email: 'denisgridin6@gmail.com',
+  password: '$2b$10$7cVNtMXD16xl0B7cHj./8eOAZt1BOUnDCLWhmK5po7Proq4IW8Kvm',
+  userId: '1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7',
+  __v: 0
+}
+[2021-04-13T17:04:31.041] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 29]: Check user access to presentation
+[2021-04-13T17:04:31.043] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 33]: presentationId: undefined
+[2021-04-13T17:04:31.044] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgzMjI2NTksImV4cCI6MTYxODMyNjI1OX0.di7GUEuBBwEr40GK9A_HYVNtzTo8caO-wDsiSZ-lZyE
+[2021-04-13T17:04:31.047] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 58]: data: {"email":"denisgridin6@gmail.com","userId":"1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7","iat":1618322659,"exp":1618326259}
+[2021-04-13T17:04:31.049] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 59]: token valid: true
+[2021-04-13T17:04:31.112] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [ERROR] [line 40]: Error {
+  message: 'You have no access to update this presentation. Contact with presentation editor',
+  code: 302,
+  error: null
+}
+[2021-04-13T17:04:31.116] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 61]: Presentation found
+[2021-04-13T17:05:40.569] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T17:05:41.775] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T17:05:47.567] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 29]: Check user access to presentation
+[2021-04-13T17:05:47.569] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 33]: presentationId: undefined
+[2021-04-13T17:05:47.570] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgzMjI2NTksImV4cCI6MTYxODMyNjI1OX0.di7GUEuBBwEr40GK9A_HYVNtzTo8caO-wDsiSZ-lZyE
+[2021-04-13T17:05:47.575] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 58]: data: {"email":"denisgridin6@gmail.com","userId":"1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7","iat":1618322659,"exp":1618326259}
+[2021-04-13T17:05:47.577] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 59]: token valid: true
+[2021-04-13T17:05:47.654] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 37]: undefined 1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7
+[2021-04-13T17:05:47.656] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [ERROR] [line 41]: Error {
+  message: 'You have no access to update this presentation. Contact with presentation editor',
+  code: 302,
+  error: null
+}
+[2021-04-13T17:05:47.664] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 62]: Presentation found
+[2021-04-13T17:06:42.138] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T17:06:43.457] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T17:06:47.974] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 29]: Check user access to presentation
+[2021-04-13T17:06:47.976] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 33]: presentationId: 5dd11333-0df3-4635-b13e-f3dd561df529
+[2021-04-13T17:06:47.978] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgzMjI2NTksImV4cCI6MTYxODMyNjI1OX0.di7GUEuBBwEr40GK9A_HYVNtzTo8caO-wDsiSZ-lZyE
+[2021-04-13T17:06:47.983] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 58]: data: {"email":"denisgridin6@gmail.com","userId":"1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7","iat":1618322659,"exp":1618326259}
+[2021-04-13T17:06:47.987] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 59]: token valid: true
+[2021-04-13T17:06:48.074] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 37]: ["1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7"] 1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7
+[2021-04-13T17:06:48.077] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 62]: Presentation found
+[2021-04-13T17:06:48.227] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 63]: update element: [object Object]
+[2021-04-13T17:06:48.304] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 67]: {
+  n: 0,
+  nModified: 0,
+  opTime: {
+    ts: Timestamp { _bsontype: 'Timestamp', low_: 5, high_: 1618322808 },
+    t: 5
+  },
+  electionId: 7fffffff0000000000000005,
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp { _bsontype: 'Timestamp', low_: 5, high_: 1618322808 },
+    signature: { hash: [Binary], keyId: [Long] }
+  },
+  operationTime: Timestamp { _bsontype: 'Timestamp', low_: 5, high_: 1618322808 }
+}
+[2021-04-13T17:07:17.713] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 29]: Check user access to presentation
+[2021-04-13T17:07:17.716] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 33]: presentationId: 5dd11333-0df3-4635-b13e-f3dd561df529
+[2021-04-13T17:07:17.718] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgzMjI2NTksImV4cCI6MTYxODMyNjI1OX0.di7GUEuBBwEr40GK9A_HYVNtzTo8caO-wDsiSZ-lZyE
+[2021-04-13T17:07:17.721] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 58]: data: {"email":"denisgridin6@gmail.com","userId":"1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7","iat":1618322659,"exp":1618326259}
+[2021-04-13T17:07:17.723] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 59]: token valid: true
+[2021-04-13T17:07:17.788] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 37]: ["1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7"] 1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7
+[2021-04-13T17:07:17.792] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 62]: Presentation found
+[2021-04-13T17:07:17.920] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 63]: update element: [object Object]
+[2021-04-13T17:07:17.995] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 67]: {
+  n: 0,
+  nModified: 0,
+  opTime: {
+    ts: Timestamp { _bsontype: 'Timestamp', low_: 14, high_: 1618322837 },
+    t: 5
+  },
+  electionId: 7fffffff0000000000000005,
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp { _bsontype: 'Timestamp', low_: 14, high_: 1618322837 },
+    signature: { hash: [Binary], keyId: [Long] }
+  },
+  operationTime: Timestamp { _bsontype: 'Timestamp', low_: 14, high_: 1618322837 }
+}
+[2021-04-13T17:09:36.617] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T17:09:38.077] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T17:10:04.225] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 30]: Check user access to presentation
+[2021-04-13T17:10:04.231] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: presentationId: 5dd11333-0df3-4635-b13e-f3dd561df529
+[2021-04-13T17:10:04.232] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 35]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgzMjI2NTksImV4cCI6MTYxODMyNjI1OX0.di7GUEuBBwEr40GK9A_HYVNtzTo8caO-wDsiSZ-lZyE
+[2021-04-13T17:10:04.252] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 58]: data: {"email":"denisgridin6@gmail.com","userId":"1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7","iat":1618322659,"exp":1618326259}
+[2021-04-13T17:10:04.257] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 59]: token valid: true
+[2021-04-13T17:10:04.343] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 38]: ["1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7"] 1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7
+[2021-04-13T17:10:04.347] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 63]: Presentation found
+[2021-04-13T17:10:04.551] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [ERROR] [line 74]: Error { message: 'Unable to get element', code: 404, error: null }
+[2021-04-13T17:10:08.808] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 30]: Check user access to presentation
+[2021-04-13T17:10:08.809] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: presentationId: 5dd11333-0df3-4635-b13e-f3dd561df529
+[2021-04-13T17:10:08.811] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 35]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgzMjI2NTksImV4cCI6MTYxODMyNjI1OX0.di7GUEuBBwEr40GK9A_HYVNtzTo8caO-wDsiSZ-lZyE
+[2021-04-13T17:10:08.814] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 58]: data: {"email":"denisgridin6@gmail.com","userId":"1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7","iat":1618322659,"exp":1618326259}
+[2021-04-13T17:10:08.816] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 59]: token valid: true
+[2021-04-13T17:10:08.882] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 38]: ["1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7"] 1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7
+[2021-04-13T17:10:08.887] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 63]: Presentation found
+[2021-04-13T17:10:09.138] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 63]: update element: [object Object]
+[2021-04-13T17:10:09.213] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 67]: {
+  n: 0,
+  nModified: 0,
+  opTime: {
+    ts: Timestamp { _bsontype: 'Timestamp', low_: 15, high_: 1618323008 },
+    t: 5
+  },
+  electionId: 7fffffff0000000000000005,
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp { _bsontype: 'Timestamp', low_: 15, high_: 1618323008 },
+    signature: { hash: [Binary], keyId: [Long] }
+  },
+  operationTime: Timestamp { _bsontype: 'Timestamp', low_: 15, high_: 1618323008 }
+}
+[2021-04-13T17:11:47.674] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T17:11:49.024] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T17:11:59.062] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 30]: Check user access to presentation
+[2021-04-13T17:11:59.065] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: presentationId: 5dd11333-0df3-4635-b13e-f3dd561df529
+[2021-04-13T17:11:59.066] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 35]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgzMjI2NTksImV4cCI6MTYxODMyNjI1OX0.di7GUEuBBwEr40GK9A_HYVNtzTo8caO-wDsiSZ-lZyE
+[2021-04-13T17:11:59.071] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 58]: data: {"email":"denisgridin6@gmail.com","userId":"1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7","iat":1618322659,"exp":1618326259}
+[2021-04-13T17:11:59.073] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 59]: token valid: true
+[2021-04-13T17:11:59.167] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 38]: ["1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7"] 1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7
+[2021-04-13T17:11:59.171] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 63]: Presentation found
+[2021-04-13T17:11:59.415] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 63]: update element: [object Object]
+[2021-04-13T17:11:59.496] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 67]: {
+  n: 0,
+  nModified: 0,
+  opTime: {
+    ts: Timestamp { _bsontype: 'Timestamp', low_: 8, high_: 1618323119 },
+    t: 5
+  },
+  electionId: 7fffffff0000000000000005,
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp { _bsontype: 'Timestamp', low_: 8, high_: 1618323119 },
+    signature: { hash: [Binary], keyId: [Long] }
+  },
+  operationTime: Timestamp { _bsontype: 'Timestamp', low_: 8, high_: 1618323119 }
+}
+[2021-04-13T17:12:42.116] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T17:12:42.746] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 30]: Check user access to presentation
+[2021-04-13T17:12:42.747] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: presentationId: 5dd11333-0df3-4635-b13e-f3dd561df529
+[2021-04-13T17:12:42.748] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 35]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgzMjI2NTksImV4cCI6MTYxODMyNjI1OX0.di7GUEuBBwEr40GK9A_HYVNtzTo8caO-wDsiSZ-lZyE
+[2021-04-13T17:12:42.754] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 58]: data: {"email":"denisgridin6@gmail.com","userId":"1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7","iat":1618322659,"exp":1618326259}
+[2021-04-13T17:12:42.755] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 59]: token valid: true
+[2021-04-13T17:12:43.243] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T17:12:43.311] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 38]: ["1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7"] 1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7
+[2021-04-13T17:12:43.314] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 63]: Presentation found
+[2021-04-13T17:12:43.545] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 63]: update element: [object Object]
+[2021-04-13T17:12:43.623] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 67]: {
+  n: 0,
+  nModified: 0,
+  opTime: {
+    ts: Timestamp { _bsontype: 'Timestamp', low_: 8, high_: 1618323163 },
+    t: 5
+  },
+  electionId: 7fffffff0000000000000005,
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp { _bsontype: 'Timestamp', low_: 8, high_: 1618323163 },
+    signature: { hash: [Binary], keyId: [Long] }
+  },
+  operationTime: Timestamp { _bsontype: 'Timestamp', low_: 8, high_: 1618323163 }
+}
+[2021-04-13T17:14:24.707] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T17:14:25.890] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T17:14:33.031] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 30]: Check user access to presentation
+[2021-04-13T17:14:33.033] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: presentationId: 5dd11333-0df3-4635-b13e-f3dd561df529
+[2021-04-13T17:14:33.035] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 35]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgzMjI2NTksImV4cCI6MTYxODMyNjI1OX0.di7GUEuBBwEr40GK9A_HYVNtzTo8caO-wDsiSZ-lZyE
+[2021-04-13T17:14:33.040] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 58]: data: {"email":"denisgridin6@gmail.com","userId":"1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7","iat":1618322659,"exp":1618326259}
+[2021-04-13T17:14:33.041] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 59]: token valid: true
+[2021-04-13T17:14:33.123] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 38]: ["1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7"] 1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7
+[2021-04-13T17:14:33.126] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 63]: Presentation found
+[2021-04-13T17:14:33.345] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 64]: update element: [object Object]
+[2021-04-13T17:14:33.433] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 68]: {
+  n: 1,
+  nModified: 1,
+  opTime: {
+    ts: Timestamp { _bsontype: 'Timestamp', low_: 3, high_: 1618323273 },
+    t: 5
+  },
+  electionId: 7fffffff0000000000000005,
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp { _bsontype: 'Timestamp', low_: 3, high_: 1618323273 },
+    signature: { hash: [Binary], keyId: [Long] }
+  },
+  operationTime: Timestamp { _bsontype: 'Timestamp', low_: 3, high_: 1618323273 }
+}
+[2021-04-13T17:21:43.396] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T17:21:46.509] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T17:22:34.434] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T17:22:35.341] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T17:22:42.224] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 30]: Check user access to presentation
+[2021-04-13T17:22:42.225] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: presentationId: 5dd11333-0df3-4635-b13e-f3dd561df529
+[2021-04-13T17:22:42.227] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 35]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgzMjI2NTksImV4cCI6MTYxODMyNjI1OX0.di7GUEuBBwEr40GK9A_HYVNtzTo8caO-wDsiSZ-lZyE
+[2021-04-13T17:22:42.233] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 58]: data: {"email":"denisgridin6@gmail.com","userId":"1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7","iat":1618322659,"exp":1618326259}
+[2021-04-13T17:22:42.234] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 59]: token valid: true
+[2021-04-13T17:22:42.328] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 38]: ["1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7"] 1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7
+[2021-04-13T17:22:42.331] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 63]: Presentation found
+[2021-04-13T17:22:42.490] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 37]: create element: [object Object]
+[2021-04-13T17:22:42.585] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 41]: {
+  _id: 6075a9329c4ac21fe0975f70,
+  __t: 'content',
+  presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+  slideId: '1aa1caa3-52ae-4771-b529-c79527d08571',
+  elementType: 'content',
+  name: 'Text',
+  insertion: { tag: 'li', contentType: 'list', listStyle: 'decimal' },
+  layout: { x: 950, y: 420, width: 300, height: 100, rotation: 0 },
+  font: {
+    fontFamily: 'Roboto',
+    fontSize: 23,
+    letterSpacing: 3,
+    lineHeight: 30,
+    fontCase: 'normal',
+    color: '#ffffff',
+    bold: false,
+    italic: false,
+    align: 'left'
+  },
+  text: 'Первый элемент изменененный',
+  __v: 0
+}
+[2021-04-13T17:23:25.039] [D:\Diploma\presitor-backend\src\utils\database.ts] [INFO] [line 23]: Running on environment test 
+[2021-04-13T17:23:25.962] [D:\Diploma\presitor-backend\src\utils\database.ts] [DEBUG] [line 54]: database connected
+[2021-04-13T17:23:34.857] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 30]: Check user access to presentation
+[2021-04-13T17:23:34.866] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: presentationId: 5dd11333-0df3-4635-b13e-f3dd561df529
+[2021-04-13T17:23:34.868] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 35]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgzMjI2NTksImV4cCI6MTYxODMyNjI1OX0.di7GUEuBBwEr40GK9A_HYVNtzTo8caO-wDsiSZ-lZyE
+[2021-04-13T17:23:34.873] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 58]: data: {"email":"denisgridin6@gmail.com","userId":"1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7","iat":1618322659,"exp":1618326259}
+[2021-04-13T17:23:34.875] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 59]: token valid: true
+[2021-04-13T17:23:34.964] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 38]: ["1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7"] 1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7
+[2021-04-13T17:23:34.967] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 63]: Presentation found
+[2021-04-13T17:23:35.121] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 37]: create element: [object Object]
+[2021-04-13T17:23:35.212] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 42]: {
+  _id: 6075a9672b8bc103543a5e77,
+  __t: 'content',
+  presentationId: '5dd11333-0df3-4635-b13e-f3dd561df529',
+  slideId: '1aa1caa3-52ae-4771-b529-c79527d08571',
+  elementType: 'content',
+  name: 'Text',
+  insertion: { tag: 'li', contentType: 'list', listStyle: 'decimal' },
+  layout: { x: 950, y: 420, width: 300, height: 100, rotation: 0 },
+  font: {
+    fontFamily: 'Roboto',
+    fontSize: 23,
+    letterSpacing: 3,
+    lineHeight: 30,
+    fontCase: 'normal',
+    color: '#ffffff',
+    bold: false,
+    italic: false,
+    align: 'left'
+  },
+  text: 'Первый элемент изменененный',
+  elementId: '8ad36a8a-0185-42f3-9ff8-f38c3cf023b1',
+  __v: 0
+}
+[2021-04-13T17:23:47.197] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 30]: Check user access to presentation
+[2021-04-13T17:23:47.199] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: presentationId: 5dd11333-0df3-4635-b13e-f3dd561df529
+[2021-04-13T17:23:47.201] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 35]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgzMjI2NTksImV4cCI6MTYxODMyNjI1OX0.di7GUEuBBwEr40GK9A_HYVNtzTo8caO-wDsiSZ-lZyE
+[2021-04-13T17:23:47.204] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 58]: data: {"email":"denisgridin6@gmail.com","userId":"1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7","iat":1618322659,"exp":1618326259}
+[2021-04-13T17:23:47.205] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 59]: token valid: true
+[2021-04-13T17:23:47.276] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 38]: ["1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7"] 1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7
+[2021-04-13T17:23:47.277] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 63]: Presentation found
+[2021-04-13T17:23:47.465] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 65]: update element: [object Object]
+[2021-04-13T17:23:47.538] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 69]: {
+  n: 1,
+  nModified: 0,
+  opTime: {
+    ts: Timestamp { _bsontype: 'Timestamp', low_: 7, high_: 1618323827 },
+    t: 5
+  },
+  electionId: 7fffffff0000000000000005,
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp { _bsontype: 'Timestamp', low_: 7, high_: 1618323827 },
+    signature: { hash: [Binary], keyId: [Long] }
+  },
+  operationTime: Timestamp { _bsontype: 'Timestamp', low_: 7, high_: 1618323827 }
+}
+[2021-04-13T17:24:07.685] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 30]: Check user access to presentation
+[2021-04-13T17:24:07.687] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: presentationId: 5dd11333-0df3-4635-b13e-f3dd561df529
+[2021-04-13T17:24:07.689] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 35]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgzMjI2NTksImV4cCI6MTYxODMyNjI1OX0.di7GUEuBBwEr40GK9A_HYVNtzTo8caO-wDsiSZ-lZyE
+[2021-04-13T17:24:07.692] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 58]: data: {"email":"denisgridin6@gmail.com","userId":"1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7","iat":1618322659,"exp":1618326259}
+[2021-04-13T17:24:07.694] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 59]: token valid: true
+[2021-04-13T17:24:07.765] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 38]: ["1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7"] 1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7
+[2021-04-13T17:24:07.767] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 63]: Presentation found
+[2021-04-13T17:24:07.968] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 65]: update element: [object Object]
+[2021-04-13T17:24:08.035] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 69]: {
+  n: 1,
+  nModified: 0,
+  opTime: {
+    ts: Timestamp { _bsontype: 'Timestamp', low_: 12, high_: 1618323847 },
+    t: 5
+  },
+  electionId: 7fffffff0000000000000005,
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp { _bsontype: 'Timestamp', low_: 12, high_: 1618323847 },
+    signature: { hash: [Binary], keyId: [Long] }
+  },
+  operationTime: Timestamp { _bsontype: 'Timestamp', low_: 12, high_: 1618323847 }
+}
+[2021-04-13T17:24:28.858] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [INFO] [line 30]: Check user access to presentation
+[2021-04-13T17:24:28.860] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 34]: presentationId: 5dd11333-0df3-4635-b13e-f3dd561df529
+[2021-04-13T17:24:28.865] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 35]: token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlbmlzZ3JpZGluNkBnbWFpbC5jb20iLCJ1c2VySWQiOiIxZDRkNDNjYi01M2U1LTRmZTEtYTRkOC1mMjcyOTBlNTllZjciLCJpYXQiOjE2MTgzMjI2NTksImV4cCI6MTYxODMyNjI1OX0.di7GUEuBBwEr40GK9A_HYVNtzTo8caO-wDsiSZ-lZyE
+[2021-04-13T17:24:28.868] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [DEBUG] [line 58]: data: {"email":"denisgridin6@gmail.com","userId":"1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7","iat":1618322659,"exp":1618326259}
+[2021-04-13T17:24:28.872] [D:\Diploma\presitor-backend\src\utils\helpers.ts] [INFO] [line 59]: token valid: true
+[2021-04-13T17:24:28.938] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 38]: ["1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7"] 1d4d43cb-53e5-4fe1-a4d8-f27290e59ef7
+[2021-04-13T17:24:28.939] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 63]: Presentation found
+[2021-04-13T17:24:29.125] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [INFO] [line 65]: update element: [object Object]
+[2021-04-13T17:24:29.195] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 69]: {
+  n: 1,
+  nModified: 1,
+  opTime: {
+    ts: Timestamp { _bsontype: 'Timestamp', low_: 7, high_: 1618323869 },
+    t: 5
+  },
+  electionId: 7fffffff0000000000000005,
+  ok: 1,
+  '$clusterTime': {
+    clusterTime: Timestamp { _bsontype: 'Timestamp', low_: 7, high_: 1618323869 },
+    signature: { hash: [Binary], keyId: [Long] }
+  },
+  operationTime: Timestamp { _bsontype: 'Timestamp', low_: 7, high_: 1618323869 }
+}
+[2021-04-13T17:25:01.397] [D:\Diploma\presitor-backend\src\middleware\middleware.ts] [DEBUG] [line 63]: Presentation found
+[2021-04-13T17:25:01.521] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 20]: get slide elements

@@ -4,7 +4,7 @@ import {
 	Get,
 	HeaderParam,
 	HeaderParams,
-	JsonController,
+	JsonController, Param,
 	Post,
 	QueryParam,
 	Res, UseBefore
@@ -20,15 +20,16 @@ import {Response} from "express";
 import uuid from "uuid-random";
 import {asyncForEach, getUserFromToken} from "utils/helpers";
 import {checkInstancesExisting, checkUserPresentationAccess} from "../middleware/middleware";
+import {ElementContentModel} from "model/element";
 
 @JsonController()
 export class SlideController {
 	@Get(PATH.slides.default)
-	async getPresentationSlides (@QueryParam(FIELDS.PRESENTATION_ID) presentationId: string, @Res() res) {
+	async getPresentationSlides (@Param(FIELDS.PRESENTATION_ID) presentationId: string, @Res() res) {
 		try {
 			const slides = await SlideModel.find({ presentationId })
 			log.debug('slides', slides)
-			const parsedSlides = slides.map(slide => {
+			const parsedSlides = slides.map((slide: ISlide) => {
 				return {
 					name: slide.name,
 					slideId: slide.slideId,
@@ -36,6 +37,7 @@ export class SlideController {
 					index: slide.index
 				}
 			})
+			log.debug(parsedSlides)
 			return res.json(parsedSlides)
 		} catch (error) {
 			log.error(error)

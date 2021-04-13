@@ -20,6 +20,13 @@ export const MESSAGES = {
 	ERROR_PRESENTATION_ACCESS: 'You have no access to update this presentation. Contact with presentation editor',
 	ERROR_GET_SLIDE: 'Unable to get slide',
 	ERROR_DELETE_SLIDE: 'Unable to remove slide',
+	ERROR_GET_ELEMENTS: 'Unable to get slide elements',
+	ERROR_ELEMENT_CREATE: 'Unable to create element',
+	ERROR_UNDEFINED_ELEMENT_TYPE: 'Undefined element type',
+	ERROR_ELEMENT_UPDATE: 'Unable to update element',
+	ERROR_GET_ELEMENT: 'Unable to get element',
+	ERROR_UPDATE_ELEMENT: 'Unable to update element',
+	ERROR_REMOVE_ELEMENT: 'Unable to remove element',
 	
 	
 	ERROR_QUERY_NOT_SET(field: string) {

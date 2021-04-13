@@ -13,6 +13,7 @@ import bodyParser from "body-parser";
 import {authChecker} from "utils/helpers";
 import {PresentationController} from "./controller/presentation-controller";
 import {SlideController} from "./controller/slide-controller";
+import {ElementsController} from "./controller/elements-controller";
 const cors = require('cors')
 
 connect()
@@ -20,7 +21,7 @@ const app: Express = createExpressServer({
 	authorizationChecker: authChecker,
 	cors: true,
 	routePrefix: '/api',
-	controllers: [UserController, PresentationController, SlideController], // we specify controllers we want to use
+	controllers: [UserController, PresentationController, SlideController, ElementsController], // we specify controllers we want to use
 });
 const port = process.env.PORT;
 const httpContext = require('express-http-context')

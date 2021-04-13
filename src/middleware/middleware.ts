@@ -6,6 +6,7 @@ import {Error} from "utils/Error";
 import {MESSAGES} from "utils/messages";
 import {errorCodes} from "utils/errorCodes";
 import {SlideModel} from "model/slide";
+import {ElementModel} from "model/element";
 
 
 export function loggingBody (request: Request, response: Response, next?: (err?: any) => any): any {
@@ -28,12 +29,13 @@ export async function checkUserPresentationAccess (request: Request, response: R
 	try {
 		log.info('Check user access to presentation')
 		const token = request.headers['authorization']?.split(' ')[1]
-		const presentationId = request.body?.presentationId || request.query?.presentationId
+		const presentationId = request.body?.presentationId || request.query?.presentationId || request.params?.presentationId
 		if (token) {
 			log.debug('presentationId: ' + presentationId)
 			log.debug('token: ' + token)
 			const user = getUserFromToken(token)
 			const presentation = await PresentationModel.findOne({ presentationId }) as IPresentation
+			log.debug(presentation?.editorIds, user.userId)
 			if (presentation?.editorIds.includes(user.userId)) {
 				next()
 			} else {
@@ -53,17 +55,28 @@ export async function checkUserPresentationAccess (request: Request, response: R
 
 export async function checkInstancesExisting (request: Request, response: Response, next?: (err?: any) => any) {
 	try {
-		const presentationId = request.body?.presentationId || request.query?.presentationId
-		const slideId = request.body?.slideId || request.query?.slideId
-		const elementId = request.body?.elementId || request.query?.elementId
+		const presentationId = request.body?.presentationId || request.query?.presentationId || request.params.presentationId
+		const slideId = request.body?.slideId || request.query?.slideId || request.params.slideId
+		const elementId = request.body?.elementId || request.query?.elementId || request.params.elementId
 		
 		if (presentationId) {
+			log.debug('Presentation found')
 			const resultGetPresentation = await PresentationModel.findOne({ presentationId })
 			if (resultGetPresentation) {
 				if (slideId) {
 					const resultGetSlide = await SlideModel.findOne({ slideId })
 					if (resultGetSlide) {
-						next()
+						if (elementId) {
+							const resultGetElements = await ElementModel.findOne({ elementId })
+							if (resultGetElements) {
+								next()
+							} else {
+								log.error(new Error(MESSAGES.ERROR_GET_ELEMENT, errorCodes.element.elementGet))
+								response.json(new Error(MESSAGES.ERROR_GET_ELEMENT, errorCodes.element.elementGet))
+							}
+						} else {
+							next()
+						}
 					} else {
 						const error = new Error(MESSAGES.ERROR_GET_SLIDE, errorCodes.slide.slideGet)
 						log.error(error)
@@ -77,6 +90,8 @@ export async function checkInstancesExisting (request: Request, response: Respon
 				response.json(new Error(MESSAGES.ERROR_PRESENTATION_NOT_FOUND, errorCodes.presentation.notFound))
 				next(false)
 			}
+		} else {
+			next()
 		}
 		
 	} catch (error) {

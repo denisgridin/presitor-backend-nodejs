@@ -20,5 +20,14 @@ export const errorCodes = {
 		slideCreate: 301,
 		slideGet: 302,
 		deleteSlide: 303
+	},
+	
+	element: {
+		elementsGet: 400,
+		elementCreate: 401,
+		elementTypeUndefined: 402,
+		elementUpdate: 403,
+		elementGet: 404,
+		elementRemove: 405
 	}
 }
