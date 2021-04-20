@@ -7,9 +7,10 @@ import {log} from "utils/logger";
 import {Response} from "express";
 import {checkInstancesExisting, checkUserPresentationAccess} from "../middleware/middleware";
 import {ElementContentModel, ElementModel} from "model/element";
-import {IElement} from "interface/presentation";
+import {IContent, IElement} from "interface/presentation";
 import {ELEMENT_TYPE} from "utils/enums";
 import uuid from "uuid-random";
+const pick = require('lodash.pick')
 
 @JsonController()
 export class ElementsController {
@@ -19,13 +20,23 @@ export class ElementsController {
 		try {
 			log.debug('get slide elements')
 			const contents = await ElementContentModel.find({presentationId, slideId})
-			return res.json(contents)
+			const elements = [ ...contents ].map(element => pick(element, [
+				FIELDS.PRESENTATION_ID,
+				FIELDS.SLIDE_ID,
+				FIELDS.ELEMENT_ID,
+				FIELDS.ELEMENT_TYPE,
+				FIELDS.NAME,
+				FIELDS.INSERTION,
+				FIELDS.LAYOUT,
+				FIELDS.FONT,
+				FIELDS.TEXT
+			]))
+			return res.json(elements)
 		} catch (error) {
 			log.error(error)
 			return res.json(new Error(MESSAGES.ERROR_GET_ELEMENTS, errorCodes.element.elementsGet, error))
 		}
 	}
-	
 	
 	@UseBefore(checkInstancesExisting)
 	@UseBefore(checkUserPresentationAccess)

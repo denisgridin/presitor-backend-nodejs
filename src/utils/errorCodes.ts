@@ -12,7 +12,9 @@ export const errorCodes = {
 		userPresentationCreate: 200,
 		userPresentationGet: 201,
 		notFound: 202,
-		presentationAccess: 302
+		presentationAccess: 302,
+		presentationRemove: 303,
+		presentationUpdate: 304
 	},
 	
 	slide: {

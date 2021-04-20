@@ -27,6 +27,8 @@ export const MESSAGES = {
 	ERROR_GET_ELEMENT: 'Unable to get element',
 	ERROR_UPDATE_ELEMENT: 'Unable to update element',
 	ERROR_REMOVE_ELEMENT: 'Unable to remove element',
+	ERROR_PRESENTATION_REMOVE: 'Unable to remove presentation',
+	ERROR_PRESENTATION_UPDATE: 'Unable to update presentation',
 	
 	
 	ERROR_QUERY_NOT_SET(field: string) {
