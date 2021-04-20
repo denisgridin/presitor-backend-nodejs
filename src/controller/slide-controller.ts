@@ -41,7 +41,7 @@ export class SlideController {
 			return res.json(parsedSlides)
 		} catch (error) {
 			log.error(error)
-			return res.json(new Error(MESSAGES.ERROR_GET_SLIDES, errorCodes.slide.slidesGet, error))
+			return res.status(500).json(new Error(MESSAGES.ERROR_GET_SLIDES, errorCodes.slide.slidesGet, error))
 		}
 	}
 	
@@ -60,7 +60,7 @@ export class SlideController {
 			return res.send(slide.slideId)
 		} catch (error) {
 			log.error(error)
-			return res.json(new Error(MESSAGES.ERROR_CREATE_SLIDE, errorCodes.slide.slideCreate))
+			return res.status(500).json(new Error(MESSAGES.ERROR_CREATE_SLIDE, errorCodes.slide.slideCreate))
 		}
 	}
 	
@@ -92,7 +92,7 @@ export class SlideController {
 			return res.sendStatus(200)
 		} catch (error) {
 			log.error(error)
-			return res.json(new Error(MESSAGES.ERROR_DELETE_SLIDE, errorCodes.slide.deleteSlide, error))
+			return res.status(500).json(new Error(MESSAGES.ERROR_DELETE_SLIDE, errorCodes.slide.deleteSlide, error))
 		}
 	}
 }
