@@ -83,12 +83,12 @@ export class SlideController {
 	@Authorized()
 	@UseBefore(checkInstancesExisting)
 	@UseBefore(checkUserPresentationAccess)
-	@Delete(PATH.slides.default)
-	async removePresentationSlide (@QueryParam(FIELDS.PRESENTATION_ID) presentationId: string, @QueryParam(FIELDS.SLIDE_ID) slideId: string, @Res() res: Response) {
+	@Delete(PATH.slides.exact)
+	async removePresentationSlide (@Param(FIELDS.PRESENTATION_ID) presentationId: string, @Param(FIELDS.SLIDE_ID) slideId: string, @Res() res: Response) {
 		try {
-			const { deletedCount } = await SlideModel.deleteOne({ presentationId, slideId })
+			const slide = await SlideModel.findOneAndDelete({ presentationId, slideId })
 			await this.updateSlidesIndexesRecursive(presentationId)
-			console.log('deleted count: ' + deletedCount)
+			console.log('deleted: ' + slide)
 			return res.sendStatus(200)
 		} catch (error) {
 			log.error(error)
