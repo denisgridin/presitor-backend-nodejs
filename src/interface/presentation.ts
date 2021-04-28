@@ -1,4 +1,4 @@
-import {ALIGN, CONTENT_TYPE, ELEMENT_TYPE, LIST_STYLE} from "utils/enums";
+import {ALIGN, BORDER_STYLE, CONTENT_TYPE, ELEMENT_TYPE, LIST_STYLE} from "utils/enums";
 
 export interface ILayout {
 	x: number,
@@ -39,4 +39,19 @@ export interface IContent extends IElement{
 		align: ALIGN,
 		[ key: string ]: any
 	}
+}
+
+
+export interface IStyle {
+	fillColor: string,
+	boxShadow: string,
+	opacity: number,
+	borderColor: string,
+	borderRadius: number,
+	borderWidth: number,
+	borderStyle: BORDER_STYLE
+}
+
+export interface IShape extends IContent {
+	style: IStyle
 }

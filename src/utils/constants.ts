@@ -30,7 +30,8 @@ export const FIELDS = {
 	INSERTION: 'insertion',
 	LAYOUT: 'layout',
 	FONT: 'font',
-	TEXT: 'text'
+	TEXT: 'text',
+	STYLE: 'style'
 }
 
 export const TOKEN_EXPIRATION = '60m'

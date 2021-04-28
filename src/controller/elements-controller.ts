@@ -6,10 +6,11 @@ import {errorCodes} from "utils/errorCodes";
 import {log} from "utils/logger";
 import {Response} from "express";
 import {checkInstancesExisting, checkUserPresentationAccess} from "../middleware/middleware";
-import {ElementContentModel, ElementModel} from "model/element";
-import {IContent, IElement} from "interface/presentation";
+import {ElementContentModel, ElementModel, ElementShapeModel} from "model/element";
+import {IElement} from "interface/presentation";
 import {ELEMENT_TYPE} from "utils/enums";
 import uuid from "uuid-random";
+
 const pick = require('lodash.pick')
 
 @JsonController()
@@ -29,12 +30,13 @@ export class ElementsController {
 				FIELDS.INSERTION,
 				FIELDS.LAYOUT,
 				FIELDS.FONT,
-				FIELDS.TEXT
+				FIELDS.TEXT,
+				FIELDS.STYLE
 			]))
 			return res.json(elements)
 		} catch (error) {
 			log.error(error)
-			return res.json(new Error(MESSAGES.ERROR_GET_ELEMENTS, errorCodes.element.elementsGet, error))
+			return res.status(400).json(new Error(MESSAGES.ERROR_GET_ELEMENTS, errorCodes.element.elementsGet, error))
 		}
 	}
 	
@@ -53,14 +55,20 @@ export class ElementsController {
 					log.debug(result)
 					return res.send(element.elementId)
 				}
+				case ELEMENT_TYPE.SHAPE: {
+					element.elementId = uuid()
+					const result = await ElementShapeModel.create(element)
+					log.debug(result)
+					return res.send(element.elementId)
+				}
 				default: {
 					log.error(new Error(MESSAGES.ERROR_UNDEFINED_ELEMENT_TYPE, errorCodes.element.elementTypeUndefined))
-					return res.json(new Error(MESSAGES.ERROR_UNDEFINED_ELEMENT_TYPE, errorCodes.element.elementTypeUndefined))
+					return res.status(400).json(new Error(MESSAGES.ERROR_UNDEFINED_ELEMENT_TYPE, errorCodes.element.elementTypeUndefined))
 				}
 			}
 		} catch (error) {
 			log.error(error)
-			return res.json(new Error(MESSAGES.ERROR_ELEMENT_CREATE, errorCodes.element.elementCreate, error))
+			return res.status(400).json(new Error(MESSAGES.ERROR_ELEMENT_CREATE, errorCodes.element.elementCreate, error))
 		}
 	}
 	
@@ -78,16 +86,16 @@ export class ElementsController {
 				case ELEMENT_TYPE.CONTENT: {
 					const result = await ElementContentModel.updateOne({ elementId }, element)
 					log.debug(result)
-					return result.nModified > 0 ? res.sendStatus(200) : res.json(new Error(MESSAGES.ERROR_UPDATE_ELEMENT, errorCodes.element.elementUpdate))
+					return result.nModified > 0 ? res.sendStatus(200) : res.status(400).json(new Error(MESSAGES.ERROR_UPDATE_ELEMENT, errorCodes.element.elementUpdate))
 				}
 				default: {
 					log.error(new Error(MESSAGES.ERROR_UNDEFINED_ELEMENT_TYPE, errorCodes.element.elementTypeUndefined))
-					return res.json(new Error(MESSAGES.ERROR_UNDEFINED_ELEMENT_TYPE, errorCodes.element.elementTypeUndefined))
+					return res.status(400).json(new Error(MESSAGES.ERROR_UNDEFINED_ELEMENT_TYPE, errorCodes.element.elementTypeUndefined))
 				}
 			}
 		} catch (error) {
 			log.error(error)
-			return res.json(new Error(MESSAGES.ERROR_ELEMENT_UPDATE, errorCodes.element.elementUpdate, error))
+			return res.status(400).json(new Error(MESSAGES.ERROR_ELEMENT_UPDATE, errorCodes.element.elementUpdate, error))
 		}
 	}
 
@@ -105,9 +113,8 @@ export class ElementsController {
 			return
 		} catch (error) {
 			log.error(error)
-			return res.json(new Error(MESSAGES.ERROR_REMOVE_ELEMENT, errorCodes.element.elementRemove, error))
+			return res.status(400).json(new Error(MESSAGES.ERROR_REMOVE_ELEMENT, errorCodes.element.elementRemove, error))
 		}
 	}
-	
 }
 

@@ -33,3 +33,14 @@ export enum ALIGN {
 	RIGHT = 'right',
 	CENTER = 'center'
 }
+
+export enum BORDER_STYLE {
+	SOLID = 'solid',
+	DASHED = 'dashed',
+	DOTTED = 'dotted',
+	GROOVE = 'groove',
+	RIDGE = 'ridge',
+	OUTSET = 'outset',
+	NONE = 'none'
+}
+
