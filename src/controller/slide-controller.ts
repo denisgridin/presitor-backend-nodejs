@@ -20,7 +20,7 @@ import {Response} from "express";
 import uuid from "uuid-random";
 import {asyncForEach, getUserFromToken} from "utils/helpers";
 import {checkInstancesExisting, checkUserPresentationAccess} from "../middleware/middleware";
-import {ElementContentModel} from "model/element";
+import {ElementModel} from "model/element";
 
 @JsonController()
 export class SlideController {

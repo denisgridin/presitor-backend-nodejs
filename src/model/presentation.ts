@@ -6,7 +6,7 @@ export interface IPresentation {
 	presentationId?: string,
 	editorIds: string[],
 	name: string,
-	fillColor: string,
+	background: string,
 	fontFamily: string,
 	slides?: ISlide[],
 	comments?: IComment[],
@@ -21,7 +21,7 @@ const PresentationSchema = new Schema({
 	presentationId: String,
 	editorIds: [String],
 	name: String,
-	fillColor: String,
+	background: String,
 	fontFamily: String,
 	lastUpdated: Date,
 	description: String

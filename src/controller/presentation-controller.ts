@@ -63,7 +63,7 @@ export class PresentationController {
 				const presentations: IPresentation[] = presentationDocuments.map((el: IPresentation) => {
 					return {
 						name: el.name,
-						fillColor: el.fillColor,
+						background: el.background,
 						fontFamily: el.fontFamily,
 						presentationId: el.presentationId,
 						editorIds: el.editorIds,
@@ -104,7 +104,7 @@ export class PresentationController {
 					presentationId: presentation.presentationId,
 					lastUpdated: presentation.lastUpdated,
 					editorIds: presentation.editorIds,
-					fillColor: presentation.fillColor,
+					background: presentation.background,
 					fontFamily: presentation.fontFamily
 				})
 			} else {

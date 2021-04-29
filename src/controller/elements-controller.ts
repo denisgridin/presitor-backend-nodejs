@@ -6,7 +6,7 @@ import {errorCodes} from "utils/errorCodes";
 import {log} from "utils/logger";
 import {Response} from "express";
 import {checkInstancesExisting, checkUserPresentationAccess} from "../middleware/middleware";
-import {ElementContentModel, ElementModel, ElementShapeModel} from "model/element";
+import { ElementModel } from "model/element";
 import {IElement} from "interface/presentation";
 import {ELEMENT_TYPE} from "utils/enums";
 import uuid from "uuid-random";
@@ -20,7 +20,7 @@ export class ElementsController {
 	async getSlideElements(@Param(FIELDS.PRESENTATION_ID) presentationId: string, @Param(FIELDS.SLIDE_ID) slideId: string, @Res() res: Response) {
 		try {
 			log.debug('get slide elements')
-			const contents = await ElementContentModel.find({presentationId, slideId})
+			const contents = await ElementModel.find({presentationId, slideId})
 			const elements = [ ...contents ].map(element => pick(element, [
 				FIELDS.PRESENTATION_ID,
 				FIELDS.SLIDE_ID,
@@ -48,24 +48,10 @@ export class ElementsController {
 	                                @Body() element: IElement, @Res() res: Response) {
 		try {
 			log.info('create element: ' + element)
-			switch (element.elementType) {
-				case ELEMENT_TYPE.CONTENT: {
-					element.elementId = uuid();
-					const result = await ElementContentModel.create(element)
-					log.debug(result)
-					return res.send(element.elementId)
-				}
-				case ELEMENT_TYPE.SHAPE: {
-					element.elementId = uuid()
-					const result = await ElementShapeModel.create(element)
-					log.debug(result)
-					return res.send(element.elementId)
-				}
-				default: {
-					log.error(new Error(MESSAGES.ERROR_UNDEFINED_ELEMENT_TYPE, errorCodes.element.elementTypeUndefined))
-					return res.status(400).json(new Error(MESSAGES.ERROR_UNDEFINED_ELEMENT_TYPE, errorCodes.element.elementTypeUndefined))
-				}
-			}
+			element.elementId = uuid();
+			const result = await ElementModel.create(element)
+			log.debug(result)
+			return res.send(element.elementId)
 		} catch (error) {
 			log.error(error)
 			return res.status(400).json(new Error(MESSAGES.ERROR_ELEMENT_CREATE, errorCodes.element.elementCreate, error))
@@ -82,17 +68,9 @@ export class ElementsController {
 	                                @Body() element: IElement, @Res() res: Response) {
 		try {
 			log.info('update element: ' + element)
-			switch (element.elementType) {
-				case ELEMENT_TYPE.CONTENT: {
-					const result = await ElementContentModel.updateOne({ elementId }, element)
-					log.debug(result)
-					return result.nModified > 0 ? res.sendStatus(200) : res.status(400).json(new Error(MESSAGES.ERROR_UPDATE_ELEMENT, errorCodes.element.elementUpdate))
-				}
-				default: {
-					log.error(new Error(MESSAGES.ERROR_UNDEFINED_ELEMENT_TYPE, errorCodes.element.elementTypeUndefined))
-					return res.status(400).json(new Error(MESSAGES.ERROR_UNDEFINED_ELEMENT_TYPE, errorCodes.element.elementTypeUndefined))
-				}
-			}
+			const result = await ElementModel.updateOne({ elementId }, element)
+			log.debug(result)
+			return result.nModified > 0 ? res.sendStatus(200) : res.status(400).json(new Error(MESSAGES.ERROR_UPDATE_ELEMENT, errorCodes.element.elementUpdate))
 		} catch (error) {
 			log.error(error)
 			return res.status(400).json(new Error(MESSAGES.ERROR_ELEMENT_UPDATE, errorCodes.element.elementUpdate, error))
