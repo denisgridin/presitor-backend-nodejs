@@ -16,7 +16,8 @@ export const PATH = {
 	},
 	elements: {
 		default: '/presentations/:presentationId/slides/:slideId/elements',
-		exact: '/presentations/:presentationId/slides/:slideId/elements/:elementId'
+		exact: '/presentations/:presentationId/slides/:slideId/elements/:elementId',
+		file: '/elements/file'
 	}
 }
 

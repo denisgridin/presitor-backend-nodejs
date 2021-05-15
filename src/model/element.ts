@@ -30,7 +30,8 @@ const ElementSchema = new Schema({
 		borderColor: String,
 		borderRadius: Number,
 		borderWidth: Number,
-		borderStyle: String
+		borderStyle: String,
+		zIndex: Number
 	},
 	font: {
 		fontFamily: String,

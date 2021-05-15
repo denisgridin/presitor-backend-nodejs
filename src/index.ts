@@ -14,6 +14,7 @@ import {authChecker} from "utils/helpers";
 import {PresentationController} from "./controller/presentation-controller";
 import {SlideController} from "./controller/slide-controller";
 import {ElementsController} from "./controller/elements-controller";
+const formData = require("express-form-data");
 const cors = require('cors')
 
 connect()
@@ -25,7 +26,21 @@ const app: Express = createExpressServer({
 });
 const port = process.env.PORT;
 const httpContext = require('express-http-context')
+const os = require('os')
 
+const options = {
+	uploadDir: os.tmpdir(),
+	autoClean: true
+};
+
+// parse data with connect-multiparty.
+app.use(formData.parse(options));
+// delete from the request all empty files (size == 0)
+app.use(formData.format());
+// change the file objects to fs.ReadStream
+app.use(formData.stream());
+// union the body and the files
+app.use(formData.union());
 app.use(cors())
 app.use(bodyParser.json())
 app.use(httpContext.middleware)
