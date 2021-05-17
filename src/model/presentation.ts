@@ -8,9 +8,11 @@ export interface IPresentation {
 	name: string,
 	background: string,
 	fontFamily: string,
+	userId?: string,
 	slides?: ISlide[],
 	comments?: IComment[],
 	marks?: { [key: string]: number },
+	slideIndex?: number,
 	lastUpdated: Date,
 	description: string
 }
@@ -24,7 +26,8 @@ const PresentationSchema = new Schema({
 	background: String,
 	fontFamily: String,
 	lastUpdated: Date,
-	description: String
+	description: String,
+	slideIndex: Number
 })
 
 export const PresentationModel = model<IPresentationDocument>('presentation', PresentationSchema)

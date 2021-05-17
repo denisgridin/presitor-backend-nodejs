@@ -20,17 +20,29 @@ import {errorCodes} from "utils/errorCodes";
 import {log} from "utils/logger";
 import {checkInstancesExisting, checkUserPresentationAccess} from "../middleware/middleware";
 import * as Path from "path";
+import {SlideModel} from "model/slide";
+import {ISlide} from "interface/presentation";
 
-@Authorized()
 @JsonController()
 export class PresentationController {
+	@Authorized()
 	@Post(PATH.presentations.default)
 	async createPresentation (@Body() data: IPresentation, @Res() res) {
 		try {
 			const presentation: IPresentation = data
+			presentation.editorIds = [ data.userId ]
 			presentation.presentationId = uuid()
 			presentation.lastUpdated = new Date()
+			presentation.name = 'Новая презентация'
+			presentation.background = '#ffffff'
+			presentation.fontFamily = 'Roboto'
 			await PresentationModel.create(presentation)
+			const slide = {} as ISlide
+			slide.presentationId = presentation.presentationId
+			slide.slideId = uuid()
+			slide.index = 0
+			log.debug(slide)
+			await SlideModel.create(slide)
 			return res.send(presentation.presentationId)
 		} catch (error) {
 			log.error(error)
@@ -38,6 +50,7 @@ export class PresentationController {
 		}
 	}
 	
+	@Authorized()
 	@Post(PATH.presentations.exact)
 	async updatePresentation (@Body() presentation: IPresentation, @Res() res) {
 		try {
@@ -105,7 +118,8 @@ export class PresentationController {
 					lastUpdated: presentation.lastUpdated,
 					editorIds: presentation.editorIds,
 					background: presentation.background,
-					fontFamily: presentation.fontFamily
+					fontFamily: presentation.fontFamily,
+					slideIndex: presentation.slideIndex || 0
 				})
 			} else {
 				log.error(new Error(MESSAGES.ERROR_PRESENTATION_NOT_FOUND, errorCodes.presentation.notFound))
@@ -132,6 +146,7 @@ export class PresentationController {
 		}
 	}
 	
+	@Authorized()
 	@Get(PATH.presentations.default)
 	async getLastPresentations (@QueryParam('userId') userId: string, @Res() res: Response) {
 		try {
