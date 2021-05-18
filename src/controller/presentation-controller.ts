@@ -22,6 +22,7 @@ import {checkInstancesExisting, checkUserPresentationAccess} from "../middleware
 import * as Path from "path";
 import {SlideModel} from "model/slide";
 import {ISlide} from "interface/presentation";
+import {ElementModel} from "model/element";
 
 @JsonController()
 export class PresentationController {
@@ -135,10 +136,19 @@ export class PresentationController {
 	@UseBefore(checkInstancesExisting)
 	@UseBefore(checkUserPresentationAccess)
 	@Delete(PATH.presentations.exact)
-	async removePresentation (@Param(FIELDS.PRESENTATION_ID) presentationId: string, @Res() res: Response) {
+	async removePresentation (@Param(FIELDS.PRESENTATION_ID) presentationId: string, @QueryParam(FIELDS.USER_ID) userId: string,  @Res() res: Response) {
 		try {
-			const result = await PresentationModel.findOneAndDelete({ presentationId })
-			log.debug(result)
+			const presentation = await PresentationModel.find({ editorIds: userId, presentationId })
+			log.debug(presentation)
+			if (presentation) {
+				await PresentationModel.deleteOne({ presentationId })
+				await SlideModel.deleteMany({ presentationId })
+				await ElementModel.deleteMany({ presentationId })
+			} else {
+				return res.sendStatus(403)
+			}
+			// const result = await PresentationModel.findOneAndDelete({ presentationId })
+			// log.debug(result)
 			return res.sendStatus(200)
 		} catch (error) {
 			log.error(error)

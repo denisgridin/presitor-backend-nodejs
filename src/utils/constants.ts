@@ -32,7 +32,8 @@ export const FIELDS = {
 	LAYOUT: 'layout',
 	FONT: 'font',
 	TEXT: 'text',
-	STYLE: 'style'
+	STYLE: 'style',
+	USER_ID: 'userId'
 }
 
 export const TOKEN_EXPIRATION = '60m'
