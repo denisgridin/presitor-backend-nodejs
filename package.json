@@ -4,7 +4,7 @@
   "description": "Presitor backend application",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "npm run tsc",
     "tsc": "tsc",
     "postinstall": "npm run tsc",
     "start": "node .",
