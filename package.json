@@ -5,6 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
+    "tsc": "tsc",
+    "postinstall": "npm run tsc",
     "start": "node .",
     "prestart": "npm run build",
     "server:watch": "ts-node-dev --respawn --transpile-only src/index.ts",
