@@ -2,7 +2,7 @@
   "name": "presitor-backend",
   "version": "1.0.0",
   "description": "Presitor backend application",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "scripts": {
     "build": "npm run tsc",
     "tsc": "tsc",
