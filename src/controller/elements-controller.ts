@@ -1,7 +1,7 @@
 import {Body, Delete, Get, JsonController, Param, Post, Put, Req, Res, UseBefore} from "routing-controllers";
 import {FIELDS, PATH} from "utils/constants";
-import {Error} from "utils/Error";
-import {MESSAGES} from "utils/messages";
+import {Error} from 'utils/Error.js';
+import {MESSAGES} from "utils/messages.js";
 import {errorCodes} from "utils/errorCodes";
 import {log} from "utils/logger";
 import {Response} from "express";
