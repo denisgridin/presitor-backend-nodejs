@@ -1,13 +1,13 @@
 import {Body, Delete, Get, JsonController, Param, Post, Put, Req, Res, UseBefore} from "routing-controllers";
-import {FIELDS, PATH} from "utils/constants.ts";
-import {Error} from "utils/Error.ts";
-import {MESSAGES} from "utils/messages.ts";
-import {errorCodes} from "utils/errorCodes.ts";
-import {log} from "utils/logger.ts";
+import {FIELDS, PATH} from "utils/constants.js";
+import {Error} from "utils/Error.js";
+import {MESSAGES} from "utils/messages.js";
+import {errorCodes} from "utils/errorCodes.js";
+import {log} from "utils/logger.js";
 import {Response} from "express";
-import {checkInstancesExisting, checkUserPresentationAccess} from "../middleware/middleware.ts";
-import { ElementModel } from "model/element.ts";
-import {IElement} from "interface/presentation.ts";
+import {checkInstancesExisting, checkUserPresentationAccess} from "../middleware/middleware.js";
+import { ElementModel } from "model/element.js";
+import {IElement} from "interface/presentation.js";
 import uuid from "uuid-random";
 import axios from 'axios'
 import * as fs from "fs"
