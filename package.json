@@ -10,7 +10,7 @@
     "build": "npm run tsc",
     "tsc": "tsc",
     "postinstall": "npm run tsc",
-    "start": "node dist/src/index.js",
+    "start": "node -r tsconfig-paths/register dist/src/index.js",
     "prestart": "npm run build",
     "server:watch": "ts-node-dev --respawn --transpile-only src/index.ts",
     "server:dev": "set NODE_ENV=test && nodemon --exec \"ts-node -r tsconfig-paths/register\" ./src/index.ts",

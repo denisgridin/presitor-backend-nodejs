@@ -6,7 +6,7 @@
     "experimentalDecorators": true,
     "rootDir": ".",
     "moduleResolution": "node",
-    "baseUrl": ".",
+    "baseUrl": "./dist",
     "paths": {
       "*": [
         "*"

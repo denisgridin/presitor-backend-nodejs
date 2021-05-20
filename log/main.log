@@ -45387,3 +45387,5 @@ SyntaxError: Invalid or unexpected token
 [2021-05-19T19:04:46.705] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 27]: get slide elements
 [2021-05-19T19:04:46.708] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 27]: get slide elements
 [2021-05-19T19:04:46.711] [D:\Diploma\presitor-backend\src\controller\elements-controller.ts] [DEBUG] [line 27]: get slide elements
+[2021-05-20T17:22:55.762] [D:\Diploma\presitor-backend\dist\src\utils\database.js] [INFO] [line 17]: Running on environment undefined
+[2021-05-20T17:22:57.666] [D:\Diploma\presitor-backend\dist\src\utils\database.js] [DEBUG] [line 45]: database connected

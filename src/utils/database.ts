@@ -22,7 +22,7 @@ export const connect = () => {
 	
 	log.info(MESSAGES.RUN_ON_ENV + process.env.NODE_ENV)
 	
-	const nodeEnv: string = process.env.NODE_ENV
+	const nodeEnv: string = process.env.NODE_ENV || 'production'
 	
 	if (ENV.test.trim() ==  nodeEnv.trim()) {
 		options = {
