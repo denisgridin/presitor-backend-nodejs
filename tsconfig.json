@@ -4,7 +4,7 @@
     "outDir": "dist",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "rootDir": "dist",
+    "rootDir": ".",
     "moduleResolution": "node",
     "baseUrl": "./dist",
     "paths": {
