@@ -4,9 +4,12 @@
     "outDir": "dist",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "rootDir": ".",
+    "rootDir": "src",
     "moduleResolution": "node",
     "baseUrl": "./dist",
+    "types": [
+      "node"
+    ],
     "paths": {
       "*": [
         "*"
@@ -15,7 +18,16 @@
       "interface/*": [ "./src/interface/*" ],
       "model/*": [ "./src/model/*" ],
       "validators/*": [ "./src/validators/*" ]
-    }
+    },
+    "exclude": [
+      "node_modules",
+      "dist",
+      "@types",
+      "tests",
+      "examples",
+      "_src",
+      "__tests__"
+    ]
   },
   "sourceMap": true
 }
