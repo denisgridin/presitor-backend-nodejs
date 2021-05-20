@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Presitor backend application",
   "main": "dist/src/index.js",
+  "engines": {
+    "node": "12.14.1"
+  },
   "scripts": {
     "build": "npm run tsc",
     "tsc": "tsc",
     "postinstall": "npm run tsc",
-    "start": "node .",
+    "start": "node dist/src/index.js",
     "prestart": "npm run build",
     "server:watch": "ts-node-dev --respawn --transpile-only src/index.ts",
     "server:dev": "set NODE_ENV=test && nodemon --exec \"ts-node -r tsconfig-paths/register\" ./src/index.ts",
