@@ -14,6 +14,12 @@
       "*": [
         "*"
       ],
+      "~/*": [
+        "./src/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
       "utils/*": [ "./src/utils/*" ],
       "interface/*": [ "./src/interface/*" ],
       "model/*": [ "./src/model/*" ],

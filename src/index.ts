@@ -8,9 +8,9 @@ dotenv.config()
 import { createExpressServer } from 'routing-controllers'
 import { UserController } from './controller/user-controller'
 import {Express} from "express"
-import {connect} from "utils/database";
+import {connect} from "@/utils/database";
 import bodyParser from "body-parser";
-import {authChecker} from "utils/helpers";
+import {authChecker} from "@/utils/helpers";
 import {PresentationController} from "./controller/presentation-controller";
 import {SlideController} from "./controller/slide-controller";
 import {ElementsController} from "./controller/elements-controller";

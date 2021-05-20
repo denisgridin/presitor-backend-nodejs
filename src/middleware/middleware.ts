@@ -1,12 +1,12 @@
 import { Request, Response } from "express";
-import {log} from "utils/logger";
-import {getUserFromToken} from "utils/helpers";
-import {IPresentation, PresentationModel} from "model/presentation";
-import {Error} from "utils/Error";
-import {MESSAGES} from "utils/messages";
-import {errorCodes} from "utils/errorCodes";
-import {SlideModel} from "model/slide";
-import {ElementModel} from "model/element";
+import {log} from "@/utils/logger";
+import {getUserFromToken} from "@/utils/helpers";
+import {IPresentation, PresentationModel} from "@/model/presentation";
+import {Error} from "@/utils/Error";
+import {MESSAGES} from "@/utils/messages";
+import {errorCodes} from "@/utils/errorCodes";
+import {SlideModel} from "@/model/slide";
+import {ElementModel} from "@/model/element";
 
 
 export function loggingBody (request: Request, response: Response, next?: (err?: any) => any): any {

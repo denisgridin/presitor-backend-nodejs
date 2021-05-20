@@ -10,19 +10,19 @@ import {
 	Res,
 	UseBefore
 } from "routing-controllers";
-import {FIELDS, PATH} from "utils/constants";
-import {IPresentation, PresentationModel} from "model/presentation";
-import {MESSAGES} from "utils/messages";
-import { Error } from 'utils/Error'
+import {FIELDS, PATH} from "@/utils/constants";
+import {IPresentation, PresentationModel} from "@/model/presentation";
+import {MESSAGES} from "@/utils/messages";
+import { Error } from '@/utils/Error'
 import uuid from "uuid-random";
 import {Response} from "express";
-import {errorCodes} from "utils/errorCodes";
-import {log} from "utils/logger";
+import {errorCodes} from "@/utils/errorCodes";
+import {log} from "@/utils/logger";
 import {checkInstancesExisting, checkUserPresentationAccess} from "../middleware/middleware";
 import * as Path from "path";
-import {SlideModel} from "model/slide";
-import {ISlide} from "interface/presentation";
-import {ElementModel} from "model/element";
+import {SlideModel} from "@/model/slide";
+import {ISlide} from "@/interface/presentation";
+import {ElementModel} from "@/model/element";
 
 @JsonController()
 export class PresentationController {
