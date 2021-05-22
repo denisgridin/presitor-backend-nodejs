@@ -45399,3 +45399,11 @@ SyntaxError: Invalid or unexpected token
 [2021-05-20T18:01:43.406] [D:\Diploma\presitor-backend\dist\src\utils\database.js] [DEBUG] [line 45]: database connected
 [2021-05-22T13:56:05.047] [D:\Diploma\presitor-backend\dist\src\utils\database.js] [INFO] [line 17]: Running on environment undefined
 [2021-05-22T13:56:09.218] [D:\Diploma\presitor-backend\dist\src\utils\database.js] [DEBUG] [line 45]: database connected
+[2021-05-22T14:25:25.041] [D:\Diploma\presitor-backend\dist\src\utils\database.js] [INFO] [line 17]: Running on environment undefined
+[2021-05-22T14:25:26.680] [D:\Diploma\presitor-backend\dist\src\utils\database.js] [DEBUG] [line 45]: database connected
+[2021-05-22T14:35:50.814] [D:\Diploma\presitor-backend\dist\src\utils\database.js] [INFO] [line 17]: Running on environment test 
+[2021-05-22T14:35:52.626] [D:\Diploma\presitor-backend\dist\src\utils\database.js] [DEBUG] [line 45]: database connected
+[2021-05-22T14:36:43.030] [D:\Diploma\presitor-backend\dist\src\utils\database.js] [INFO] [line 17]: Running on environment test 
+[2021-05-22T14:36:44.885] [D:\Diploma\presitor-backend\dist\src\utils\database.js] [DEBUG] [line 45]: database connected
+[2021-05-22T14:36:57.544] [D:\Diploma\presitor-backend\dist\src\utils\database.js] [INFO] [line 17]: Running on environment test 
+[2021-05-22T14:36:59.338] [D:\Diploma\presitor-backend\dist\src\utils\database.js] [DEBUG] [line 45]: database connected
