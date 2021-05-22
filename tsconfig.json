@@ -25,10 +25,11 @@
       "@/*": [
         "./src/*"
       ],
-      "utils/*": [ "./src/utils/*" ],
-      "interface/*": [ "./src/interface/*" ],
-      "model/*": [ "./src/model/*" ],
-      "validators/*": [ "./src/validators/*" ]
+      "utils/*": [ "src/utils/*" ],
+      "interface/*": [ "src/interface/*" ],
+      "model/*": [ "src/model/*" ],
+      "validators/*": [ "src/validators/*" ],
+      "controller/*": [ "src/controller/*" ]
     }
   },
   "sourceMap": true

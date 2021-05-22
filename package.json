@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "tsc --project ./",
-    "server": "node -r ts-node/register/transpile-only -r tsconfig-paths/register dist/src/app.js",
+    "server": "node -r ts-node/register/transpile-only -r tsconfig-paths/register dist/index.js",
     "server:watch": "ts-node-dev --respawn --transpile-only src/index.ts",
     "server:dev": "set NODE_ENV=test && nodemon --exec \"ts-node -r tsconfig-paths/register\" ./src/index.ts",
     "deploy": "git push heroku master"
@@ -38,7 +38,7 @@
     "axios": "^0.21.1",
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
-    "class-transformer": "^0.4.0",
+    "class-transformer": "^0.3.1",
     "class-validator": "^0.13.1",
     "connect-multiparty": "^2.2.0",
     "cors": "^2.8.5",
@@ -55,6 +55,7 @@
     "multer": "^1.4.2",
     "reflect-metadata": "^0.1.13",
     "routing-controllers": "^0.9.0",
+    "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",
     "uuid-random": "^1.3.2"
   }
