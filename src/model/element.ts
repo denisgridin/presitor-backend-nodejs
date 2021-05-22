@@ -1,8 +1,5 @@
 import {Document, model, Model, Schema} from "mongoose";
-import { IElement } from "interface/presentation";
-import {ALIGN, BORDER_STYLE, CONTENT_TYPE, ELEMENT_TYPE, LIST_STYLE} from "utils/enums";
-import {FIELDS} from "utils/constants";
-
+import { IElement } from "../interface/presentation";
 
 interface IElementDocument extends IElement, Document {}
 interface IElementModel extends Model<IElementDocument>{}

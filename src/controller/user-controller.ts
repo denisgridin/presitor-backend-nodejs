@@ -1,18 +1,18 @@
 import {Body, Delete, Get, JsonController, Param, Post, QueryParam, Res} from 'routing-controllers';
 import 'reflect-metadata';
-import {PATH, TOKEN_EXPIRATION} from "@/utils/constants.js"
-import {UserModel} from "@/model/user"
-import {IUser} from "@/interface/user"
-import {log} from "@/utils/logger";
+import {PATH, TOKEN_EXPIRATION} from "../utils/constants.js"
+import {UserModel} from "../model/user"
+import {IUser} from "../interface/user"
+import {log} from "../utils/logger";
 import { Response } from 'express'
-import {MESSAGES} from "@/utils/messages";
-import {Error} from "@/utils/Error";
-import {comparePassword, cryptPassword, findExistUser} from "@/utils/helpers";
-import {TokenModel} from "@/model/token";
-import {TokenValidation} from "@/validators/token";
-import {UserValidation} from "@/validators/user";
+import {MESSAGES} from "../utils/messages";
+import {Error} from "../utils/Error";
+import {comparePassword, cryptPassword, findExistUser} from "../utils/helpers";
+import {TokenModel} from "../model/token";
+import {TokenValidation} from "../validators/token";
+import {UserValidation} from "../validators/user";
 import uuid from 'uuid-random'
-import {errorCodes} from "@/utils/errorCodes";
+import {errorCodes} from "../utils/errorCodes";
 const jwt = require('jsonwebtoken')
 
 @JsonController()

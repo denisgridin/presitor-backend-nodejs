@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
-import {ENV} from "utils/enums"
-import {log} from "utils/logger";
-import {MESSAGES} from "utils/messages";
+import {ENV} from "./enums"
+import {log} from "./logger";
+import {MESSAGES} from "./messages";
 
 let database: mongoose.Connection
 

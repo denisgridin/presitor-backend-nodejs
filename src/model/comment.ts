@@ -1,5 +1,5 @@
 import {Model, Document, Schema, model} from 'mongoose'
-import {ROLE} from "utils/enums";
+import {ROLE} from "../utils/enums";
 
 export interface IComment {
 	presentation_id: string,

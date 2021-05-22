@@ -1,10 +1,7 @@
-import {UserModel} from "model/user";
-import {IUser} from "interface/user";
-import {log} from "utils/logger";
-import {MESSAGES} from "utils/messages";
-import {Error} from "utils/Error";
-import {errorCodes} from "utils/errorCodes";
-import {TOKEN_EXPIRATION} from "utils/constants";
+import {UserModel} from "../model/user";
+import {IUser} from "../interface/user";
+import {log} from "./logger";
+import {MESSAGES} from "./messages";
 import {Action} from "routing-controllers";
 const jwt = require('jsonwebtoken')
 

@@ -9,17 +9,17 @@ import {
 	QueryParam,
 	Res, UseBefore
 } from "routing-controllers";
-import {FIELDS, PATH} from "@/utils/constants";
-import {log} from "@/utils/logger";
-import {MESSAGES} from "@/utils/messages";
-import {errorCodes} from "@/utils/errorCodes";
-import {Error} from '@/utils/Error'
+import {FIELDS, PATH} from "../utils/constants";
+import {log} from "../utils/logger";
+import {MESSAGES} from "../utils/messages";
+import {errorCodes} from "../utils/errorCodes";
+import {Error} from '../utils/Error'
 import {IPresentation, PresentationModel} from "model/presentation";
-import {ISlide, SlideModel} from "@/model/slide";
+import {ISlide, SlideModel} from "../model/slide";
 import {Response} from "express";
 import uuid from "uuid-random";
-import {asyncForEach, getUserFromToken} from "@/utils/helpers";
-import {checkInstancesExisting, checkUserPresentationAccess} from "@/middleware/middleware";
+import {asyncForEach, getUserFromToken} from "../utils/helpers";
+import {checkInstancesExisting, checkUserPresentationAccess} from "../middleware/middleware";
 import {ElementModel} from "model/element";
 
 @JsonController()

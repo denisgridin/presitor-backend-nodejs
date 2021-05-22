@@ -1,6 +1,6 @@
 import {Model, Document, Schema, model} from 'mongoose'
-import {ISlide} from "model/slide";
-import {IComment} from "model/comment";
+import {ISlide} from "../model/slide";
+import {IComment} from "../model/comment";
 
 export interface IPresentation {
 	presentationId?: string,
