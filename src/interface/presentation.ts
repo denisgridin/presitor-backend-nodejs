@@ -1,4 +1,4 @@
-import {ALIGN, BORDER_STYLE, CONTENT_TYPE, ELEMENT_TYPE, LIST_STYLE} from "utils/enums";
+import {ALIGN, BORDER_STYLE, CONTENT_TYPE, LIST_STYLE} from "../utils/enums";
 
 export interface IPresentation {
 	presentationId: string,
