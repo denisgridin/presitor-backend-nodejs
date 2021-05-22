@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "ES2018",
     "esModuleInterop": true,
     "outDir": "dist",
     "emitDecoratorMetadata": true,
