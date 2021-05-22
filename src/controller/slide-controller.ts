@@ -3,10 +3,8 @@ import {
 	Body, Delete,
 	Get,
 	HeaderParam,
-	HeaderParams,
 	JsonController, Param,
 	Post,
-	QueryParam,
 	Res, UseBefore
 } from "routing-controllers";
 import {FIELDS, PATH} from "../utils/constants";
@@ -14,13 +12,11 @@ import {log} from "../utils/logger";
 import {MESSAGES} from "../utils/messages";
 import {errorCodes} from "../utils/errorCodes";
 import {Error} from '../utils/Error'
-import {IPresentation, PresentationModel} from "model/presentation";
 import {ISlide, SlideModel} from "../model/slide";
 import {Response} from "express";
 import uuid from "uuid-random";
-import {asyncForEach, getUserFromToken} from "../utils/helpers";
+import {asyncForEach} from "../utils/helpers";
 import {checkInstancesExisting, checkUserPresentationAccess} from "../middleware/middleware";
-import {ElementModel} from "model/element";
 
 @JsonController()
 export class SlideController {
