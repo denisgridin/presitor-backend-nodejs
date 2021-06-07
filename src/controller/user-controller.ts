@@ -1,6 +1,6 @@
 import {Body, Delete, Get, JsonController, Param, Post, QueryParam, Res} from 'routing-controllers';
 import 'reflect-metadata';
-import {PATH, TOKEN_EXPIRATION} from "../utils/constants.js"
+import {PATH, TOKEN_EXPIRATION} from "../utils/constants"
 import {UserModel} from "../model/user"
 import {log} from "../utils/logger";
 import { Response } from 'express'

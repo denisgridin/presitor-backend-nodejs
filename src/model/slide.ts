@@ -1,4 +1,4 @@
-import {Model, Document, Schema, model} from 'mongoose'
+import { Document, Schema, model } from 'mongoose'
 
 export interface ISlide {
 	presentationId: string,
@@ -8,7 +8,6 @@ export interface ISlide {
 	elements?: string[]
 }
 interface ISlideDocument extends ISlide, Document {}
-interface ISlideModel extends Model<ISlideDocument>{}
 
 const SlideSchema = new Schema({
 	presentationId: String,

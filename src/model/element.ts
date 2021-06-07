@@ -1,8 +1,6 @@
 import {Document, model, Model, Schema} from "mongoose";
 import { IElement } from "../interface/presentation";
-
 interface IElementDocument extends IElement, Document {}
-interface IElementModel extends Model<IElementDocument>{}
 const ElementSchema = new Schema({
 	presentationId: String,
 	slideId: String,

@@ -26,8 +26,8 @@ export const connect = () => {
 	
 	if (ENV.test.trim() ==  nodeEnv.trim()) {
 		options = {
-			password: process.env.MONGO_DB_PASSWORD_TEST,
-			login: process.env.MONGO_DB_LOGIN_TEST,
+			password: process.env.MONGO_DB_PASSWORD,
+			login: process.env.MONGO_DB_LOGIN,
 			mdb_name: process.env.MONGO_DB_NAME_TEST,
 			clusterName: process.env.MONGO_CLUSTER_NAME_TEST,
 			clusterPrefix: process.env.MONGO_CLUSTER_PREFIX_TEST,
